@@ -1,0 +1,21 @@
+name: Backend Team
+businessGroup: Engineering
+description: |
+  **Communication**
+
+  Support available 9:00-17:30 In Slack (#backend-support)
+
+  **Ways of Working**
+
+  Please don't reach out to team members directly.
+
+members:
+  - name: David Wilson
+    jobTitle: Lead Backend Engineer
+    email: david.wilson@techcorp.com
+  - name: Gavin Draper
+    jobTitle: Senior Backend Engineer
+    email: emma.brown@techcorp.com
+  - name: Frank Miller
+    jobTitle: Backend Engineer
+    email: frank.miller@techcorp.com
