@@ -1,0 +1,23 @@
+- name: Main CI/CD Pipeline
+  owner: Platform Team
+  url: https://dev.azure.com/techcorp/pipelines/main-cicd
+  description: Continuous integration and deployment for all services
+  tier: 1
+
+- name: Database Migration Pipeline
+  owner: Platform Team
+  url: https://dev.azure.com/techcorp/pipelines/db-migrations
+  description: Automated database schema migrations
+  tier: 1
+
+- name: Security Scan Pipeline
+  owner: Platform Team
+  url: https://dev.azure.com/techcorp/pipelines/security-scan
+  description: Automated security scanning and vulnerability checks
+  tier: 2
+
+- name: Performance Test Pipeline
+  owner: Backend Team
+  url: https://dev.azure.com/techcorp/pipelines/perf-tests
+  description: Performance and load testing pipeline
+  tier: 3
