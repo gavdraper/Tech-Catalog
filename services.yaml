@@ -1,0 +1,46 @@
+- name: User Authentication Service
+  owner: Platform Team
+  serviceDependencies:
+    - User Database
+    - Session Cache
+  description: Handles user authentication and authorization
+  tier: 1
+
+- name: API Gateway
+  owner: Platform Team
+  repositoryUrl: https://github.com/techcorp/api-gateway
+  releasePipelineUrl: https://dev.azure.com/techcorp/pipelines/api-gateway
+  swaggerUrl: https://api.techcorp.com/gateway/swagger
+  serviceDependencies:
+    - User Authentication Service
+    - Order Service
+    - Payment Service
+  observabilityUrl: https://monitoring.techcorp.com/api-gateway
+  runBookUrl: https://wiki.techcorp.com/runbooks/api-gateway
+  description: Main entry point for all API requests
+  tier: 1
+
+- name: Order Service
+  owner: Backend Team
+  repositoryUrl: https://github.com/techcorp/order-service
+  releasePipelineUrl: https://dev.azure.com/techcorp/pipelines/order-service
+  swaggerUrl: https://api.techcorp.com/orders/swagger
+  serviceDependencies:
+    - Orders Database
+    - Payment Service
+  observabilityUrl: https://monitoring.techcorp.com/order-service
+  runBookUrl: https://wiki.techcorp.com/runbooks/order-service
+  description: Manages order processing and fulfillment
+  tier: 2
+
+- name: Payment Service
+  owner: Backend Team
+  repositoryUrl: https://github.com/techcorp/payment-service
+  releasePipelineUrl: https://dev.azure.com/techcorp/pipelines/payment-service
+  swaggerUrl: https://api.techcorp.com/payments/swagger
+  serviceDependencies:
+    - Payments Database
+  observabilityUrl: https://monitoring.techcorp.com/payment-service
+  runBookUrl: https://wiki.techcorp.com/runbooks/payment-service
+  description: Handles payment processing and transactions
+  tier: 1
