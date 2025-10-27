@@ -1,0 +1,23 @@
+- name: Users Database
+  owner: Platform Team
+  observabilityUrl: https://monitoring.techcorp.com/databases/users
+  description: Stores user accounts and authentication data
+  tier: 1
+
+- name: Orders Database
+  owner: Backend Team
+  observabilityUrl: https://monitoring.techcorp.com/databases/orders
+  description: Contains all order and customer data
+  tier: 2
+
+- name: Payments Database
+  owner: Backend Team
+  observabilityUrl: https://monitoring.techcorp.com/databases/payments
+  description: Stores payment transactions and history
+  tier: 1
+
+- name: Session Cache
+  owner: Platform Team
+  observabilityUrl: https://monitoring.techcorp.com/databases/sessions
+  description: Redis cache for user sessions
+  tier: 2
