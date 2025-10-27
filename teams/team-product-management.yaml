@@ -1,0 +1,10 @@
+name: Product Management
+businessGroup: Product
+description: Defines product strategy and roadmap
+members:
+  - name: Gracez Lee
+    jobTitle: Product Manager
+    email: grace.lee@techcorp.com
+  - name: Henryz Chen
+    jobTitle: Associate Product Manager
+    email: henry.chen@techcorp.com
