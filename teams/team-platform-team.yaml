@@ -1,0 +1,19 @@
+name: Platform Team
+businessGroup: Engineering
+description: |
+  Responsible for infrastructure, deployment pipelines, and platform services.
+
+  **Key Responsibilities:**
+  - Infrastructure management
+  - CI/CD pipeline maintenance
+  - Platform tooling
+members:
+  - name: Alice Johnson
+    jobTitle: Senior Platform Engineer
+    email: alice.johnson@techcorp.com
+  - name: Bob Smith
+    jobTitle: Platform Engineer
+    email: bob.smith@techcorp.com
+  - name: Carol Davis
+    jobTitle: DevOps Engineer
+    email: carol.davis@techcorp.com
